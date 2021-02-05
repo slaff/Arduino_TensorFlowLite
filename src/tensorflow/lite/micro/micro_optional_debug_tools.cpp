@@ -128,10 +128,10 @@ void PrintInterpreterState(MicroInterpreter* interpreter) {
     const TfLiteNode& node = node_and_reg.node;
     const TfLiteRegistration* reg = node_and_reg.registration;
     if (reg->custom_name != nullptr) {
-      printf("Node %3zu Operator Custom Name %s\n", node_index,
+      printf("Node %3u Operator Custom Name %s\n", node_index,
              reg->custom_name);
     } else {
-      printf("Node %3zu Operator Builtin Code %3" PRId32 " %s\n", node_index,
+      printf("Node %3u Operator Builtin Code %3d %s\n", node_index,
              reg->builtin_code, EnumNamesBuiltinOperator()[reg->builtin_code]);
     }
     printf("  Inputs:");
