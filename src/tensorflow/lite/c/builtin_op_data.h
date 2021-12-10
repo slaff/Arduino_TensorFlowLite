@@ -149,7 +149,7 @@ typedef struct {
   TfLiteFusedActivation activation;
   bool merge_outputs;
 
-  // Parameter for Bidirectional RNN verison 3.
+  // Parameter for Bidirectional RNN version 3.
   bool asymmetric_quantize_inputs;
 } TfLiteBidirectionalSequenceRNNParams;
 
