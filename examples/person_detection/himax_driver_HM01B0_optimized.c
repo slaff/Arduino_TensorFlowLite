@@ -38,7 +38,7 @@ static const int kStrideShift = 1;
 //! @param channels     - Number of channels per pixel.
 //!
 //! This function reads data of one frame from HM01B0. It trims the image to an
-//! even power of two mulitple of the requested width and height.  It down
+//! even power of two multiple of the requested width and height.  It down
 //! samples the original image and duplicates the greyscale value for each color
 //! channel.
 //!
