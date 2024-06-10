@@ -43,7 +43,7 @@ uint8_t tensor_arena[kTensorArenaSize];
 
 Timer procTimer;
 
-const int ledPin = 2; // GPIO2
+// const int ledPin = 2; // GPIO2
 
 // Track whether the function has run at least once
 bool initialized = false;
