@@ -1,6 +1,9 @@
 COMPONENT_SRCDIRS := $(call ListAllSubDirs,$(COMPONENT_PATH)/src)
 COMPONENT_INCDIRS := src
-COMMON_FLAGS := -Wno-sign-compare -Wno-strict-aliasing -Wno-deprecated-declarations -Wno-nonnull -lm
+COMMON_FLAGS := -Wno-sign-compare -Wno-strict-aliasing -Wno-deprecated-declarations -Wno-nonnull
+ifeq ($(GCC_NAME),gcc)
+	COMMON_FLAGS += -lm
+endif
 ifneq ($(SMING_ARCH),Host)
 	COMMON_FLAGS += -D__ANDROID__=0 
 endif
