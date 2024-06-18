@@ -15,7 +15,7 @@
 // detect_platform.h: Sets up macros that control architecture-specific
 // features of gemmlowp's implementation.
 
-#ifndef GEMMLOWP_INTERNAL_DETECT_PLATFORM_H_
+#if 0 // no optimisations
 #define GEMMLOWP_INTERNAL_DETECT_PLATFORM_H_
 
 // Our inline assembly path assume GCC/Clang syntax.
